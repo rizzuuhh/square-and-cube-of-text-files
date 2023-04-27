@@ -1,3 +1,4 @@
+import pyfiglet
 def create_output_files(input_file):
     # Read the input file
     with open(input_file, 'r') as f:
@@ -25,6 +26,8 @@ def create_output_files(input_file):
             f.write(str(cube) + '\n')
 
     # Print success message
+    ascii_banner = pyfiglet.figlet_format("Files created!")
+    print(ascii_banner)
 
 
 
