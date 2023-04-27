@@ -28,6 +28,10 @@ def create_output_files(input_file):
     # Print success message
     ascii_banner = pyfiglet.figlet_format("Files created!")
     print(ascii_banner)
+   
+    create_output_files('integers.txt')
+
+
 
 
 
