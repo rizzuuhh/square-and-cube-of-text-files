@@ -1,10 +1,10 @@
 def create_output_files(input_file):
     # Read the input file
-     with open(input_file, 'r') as f:
+    with open(input_file, 'r') as f:
         numbers = f.read().split()
 
-
-# Convert numbers to integers
+    # Convert numbers to integers
+    numbers = [int(n) for n in numbers]
 
 # Separate the even and odd numbers
     
