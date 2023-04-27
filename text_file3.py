@@ -1,4 +1,8 @@
-# Read the input file
+def create_output_files(input_file):
+    # Read the input file
+     with open(input_file, 'r') as f:
+        numbers = f.read().split()
+
 
 # Convert numbers to integers
 
