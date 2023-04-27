@@ -14,9 +14,17 @@ def create_output_files(input_file):
     even_squares = [n**2 for n in even_numbers]
     odd_cubes = [n**3 for n in odd_numbers]
    
-# Create output files
-  
-# Print success message
+    # Create output files
+    with open('double.txt', 'w') as f:
+        for square in even_squares:
+            f.write(str(square) + '\n')
+
+
+    with open('triple.txt', 'w') as f:
+        for cube in odd_cubes:
+            f.write(str(cube) + '\n')
+
+    # Print success message
 
 
 
